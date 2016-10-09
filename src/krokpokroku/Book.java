@@ -10,4 +10,18 @@ public class Book {
     int pages;
     String publisher;
     String isbn;
+
+    Book(String bookTitle, String bookAuthor, int bookRelease, int bookPages, String bookPublisher, String bookIsbn){
+        title=bookTitle;
+        author=bookAuthor;
+        releaseDate=bookRelease;
+        pages=bookPages;
+        publisher=bookPublisher;
+        isbn=bookIsbn;
+
+    }
+    void PrintInfo(){
+        String info = title + "; "+author + "; "+releaseDate+": "+pages+"; "+publisher+"; "+isbn;
+        System.out.print(info);
+    }
 }
